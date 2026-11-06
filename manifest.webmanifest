@@ -1,0 +1,12 @@
+{
+  "name": "BondChess",
+  "short_name": "BondChess",
+  "description": "Xadrez grátis da BondLabs",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E1726",
+  "theme_color": "#0E1726",
+  "icons": [{ "src": "icon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }]
+}

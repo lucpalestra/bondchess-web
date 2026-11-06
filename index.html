@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>BondChess · BondLabs</title>
+<meta name="description" content="Xadrez grátis, sem anúncio: jogue contra o Stockfish, ao vivo com amigos, partidas mágicas, aberturas e BondReview.">
+<meta name="theme-color" content="#0E1726">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BondChess">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #0E1726; color: #F3F1EA;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+  #root { height: 100%; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; }
+  input::placeholder { color: #9AA6BC; }
+  .bc-scroll::-webkit-scrollbar { width: 0; height: 0; }
+  #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: #D4A64A; font-size: 22px; font-weight: 800; }
+</style>
+<!-- Firebase (ao vivo) -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js" defer></script>
+</head>
+<body>
+<div id="boot">♞ BondChess</div>
+<div id="root"></div>
+<script src="firebase-config.js"></script>
+<script src="app.js" defer></script>
+<script>window.addEventListener('load', function(){ var b=document.getElementById('boot'); if(b) b.remove(); });</script>
+</body>
+</html>

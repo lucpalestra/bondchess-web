@@ -1,0 +1,26 @@
+BondChess Web — BondLabs
+========================
+
+PUBLICAR
+1. Suba TODO o conteúdo desta pasta no seu site, por exemplo em bondlabs.com.br/chess/
+   (tudo usa caminhos relativos, então funciona em qualquer pasta).
+2. Abra o endereço no celular. Pronto.
+
+NO IPHONE / ANDROID COMO "APP"
+- iPhone (Safari): Compartilhar → "Adicionar à Tela de Início".
+- Android (Chrome): menu ⋮ → "Instalar app" / "Adicionar à tela inicial".
+  Abre em tela cheia, com o ícone do BondChess.
+
+AO VIVO (você x seu primo)
+1. Crie o projeto no Firebase (passo a passo no próprio site, botão "Ao vivo").
+2. Cole as regras de database.rules.json na aba Regras do Realtime Database.
+3. Cole o config em firebase-config.js e publique de novo só esse arquivo.
+4. Você cria a partida, manda o código BOND-XXX para ele, ele digita e vocês jogam.
+
+MOTOR
+- O site baixa o Stockfish 19 automaticamente (jsDelivr). Se não conseguir, tenta o 18,
+  depois o 10 e, por último, usa o BondEngine. A tela inicial mostra qual motor está ativo.
+- Opcional: coloque stockfish-19-lite-single.js e .wasm na pasta engine/ para servir do seu próprio site.
+
+Seus dados (partidas, stats, puzzles) ficam salvos no navegador de cada aparelho.
+Stockfish é GPLv3; o código do BondChess também.

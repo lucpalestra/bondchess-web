@@ -1,0 +1,3 @@
+Opcional: coloque aqui stockfish-19-lite-single.js e stockfish-19-lite-single.wasm
+(do pacote npm stockfish@19, pasta bin/) para o motor carregar do seu próprio site.
+Sem eles, o site baixa o Stockfish 19 do jsDelivr automaticamente.
